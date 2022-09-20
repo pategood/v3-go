@@ -1,18 +1,16 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
-<template>
-  <header>
+<script lang="ts" setup>
+  import layout from '@/container/layout/index.vue';
+  import { RouterLink, RouterView } from "vue-router";
+  </script>
+  
+  <template>
     <div>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <router-view></router-view>
+  
+      <!-- <router-view v-if="$route.path === '/login'"></router-view> -->
+      <!-- <layout v-else></layout> -->
     </div>
-  </header>
-
-  <RouterView />
-</template>
-
-<style scoped></style>
+  </template>
+  
+  <style scoped></style>
+  

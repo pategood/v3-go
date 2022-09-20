@@ -2,14 +2,12 @@ import { ITools } from '@/utils/tools'
 import type { IAjax } from '@/utils/request'
 
 declare global{
-    // const app: IApp
     const Tools: ITools
     const Ajax: IAjax 
 
     type ITimeout = ReturnType<typeof setTimeout>
 
     interface Window{
-        // app: IApp;      // 全局app对象, 挂载一些全局数据与操作方法
         Tools: ITools;  // 全局工具库对象, 其中包含一些公用方法
         Ajax: IAjax;    // 全局Ajax请求库
     }
@@ -24,7 +22,6 @@ declare module 'vue' {
     }
 
     interface ComponentCustomProperties {
-    //   app: IApp;
       Tools: ITools;
     }
 }
