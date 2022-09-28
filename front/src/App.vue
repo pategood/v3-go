@@ -5,10 +5,8 @@
   
   <template>
     <div>
-      <router-view></router-view>
-  
-      <!-- <router-view v-if="$route.path === '/login'"></router-view> -->
-      <!-- <layout v-else></layout> -->
+      <router-view v-if="$route.path === '/login'"></router-view>
+      <layout v-else></layout>
     </div>
   </template>
   
