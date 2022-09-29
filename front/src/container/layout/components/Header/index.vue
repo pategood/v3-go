@@ -20,7 +20,6 @@
 
 <script lang="ts" setup>
 import { reactive, watch } from 'vue';
-// import { useRoute } from "vue-router";
 
 const route = useRoute();
 let routeListConfig: any = reactive({

@@ -8,14 +8,14 @@
         <el-header>
           <Head></Head>
         </el-header>
-        <el-main>
+        <!-- <el-main>
             <router-view v-slot="{Component}">
-              <!-- <transition name="fade-transform" mode="out-in">
+              <transition name="fade-transform" mode="out-in">
                 <component class="view" :is="Component"></component>
-              </transition> -->
+              </transition>
             </router-view>
             <Drawer></Drawer>
-        </el-main>
+        </el-main> -->
       </el-container>
     </el-container>
   </div>
